@@ -12,3 +12,25 @@
     height: 100vh;
     width: 100vw;
   }
+
+  #nav-bar{
+    background-color: orangered;
+    height: 30px;
+
+  }
+
+  .dest{
+    height: 60px;
+    width: 60px;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+  }
+
+  #destination{
+    background-color: blue;
+  }
