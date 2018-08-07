@@ -9,13 +9,15 @@ const iconURLs = {
 
 
 
-let buildMarker = function (type, cordinates){
+let buildMarker = function (type, coordinates){
 
   const markerDOMEl = document.createElement('div');
   markerDOMEl.style.width = "32px";
   markerDOMEl.style.height = "32px";
+  markerDOMEl.style.backgroundImage = "url(" + iconURLs[type] + ")";
 
-
+  const newMarker = new mapboxgl.Marker(markerDOMEl).setLngLat(coordinates);
+  return newMarker;
 }
 
 module.exports = buildMarker;
